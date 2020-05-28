@@ -45,7 +45,7 @@ app.post("/login", (req, res) => {
             if(foundUser) {                                     // User found
                 
                 if(foundUser.password === password){
-                    res.render("secrets");                      // Allow access , login accessed.
+                    res.render("secrets");                      // Access allowed, login successfull.
                 } else {
                     res.render("login", {alertMessage : "Incorrect password"});
                 }
